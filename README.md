@@ -62,7 +62,10 @@ This project implements a **virtual scrolling table** with infinite scrolling us
 - **CSS**: Styling for responsive and user-friendly UI.
 
 ---
+## Project Images
+![Virtual Scrolling Table Screenshot](https://github.com/ikbal-hussain/jgs-tex-fab/blob/main/frontend/assets/Virtual%20Scrolling%20table%20screenshot.png?raw=true)
 
+---
 ## Folder Structure
 ```plaintext
 root/

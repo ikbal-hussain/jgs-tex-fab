@@ -8,7 +8,7 @@ const Table = () => {
     useOrders();
   const { ref, inView } = useInView();
 
-  const [sortField, setSortField] = useState("customerName");
+  const [sortField, setSortField] = useState(null);
   const [sortDirection, setSortDirection] = useState("asc");
 
   React.useEffect(() => {
@@ -25,6 +25,9 @@ const Table = () => {
   };
 
   const sortedOrders = React.useMemo(() => {
+    if (!sortField) {
+      return orders;
+    }
     return [...orders].sort((a, b) => {
       const compare = a[sortField] < b[sortField] ? -1 : 1;
       return sortDirection === "asc" ? compare : -compare;

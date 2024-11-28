@@ -1,8 +1,9 @@
 import { useInfiniteQuery } from "react-query";
 import axios from "axios";
 
+
 const fetchOrders = async ({ pageParam = null }) => {
-  const response = await axios.get("http://localhost:5010/api/orders", {
+  const response = await axios.get(import.meta.env.VITE_API_URL, {
     params: {
       cursor: pageParam,
       limit: 50,

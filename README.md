@@ -4,6 +4,9 @@
  ## Backend for the project
 This is the backend service for the Orders Project, responsible for handling data storage, APIs, and business logic.
 
+## Deployed link
+<h3>https://jgs-tex-fab.onrender.com/api/orders </h3>
+
 ## Features
 - Cursor-based pagination for large datasets.
 - Sorting by any field.

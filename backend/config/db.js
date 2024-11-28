@@ -1,8 +1,11 @@
 const mongoose = require("mongoose");
+import dotenv from "dotenv";
+dotenv.config();
+
 
 const connectDB = async () => {
   try {
-    const uri = "mongodb://localhost:27017/ordersDB";
+    const uri = process.env.uri
     await mongoose.connect(uri);
     console.log("Connected to MongoDB with Mongoose");
   } catch (error) {

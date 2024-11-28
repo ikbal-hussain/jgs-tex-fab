@@ -2,6 +2,10 @@ const mongoose = require("mongoose");
 const { v4: uuidv4 } = require("uuid");
 const { faker } = require("@faker-js/faker");
 const OrderModel = require("../models/order.model");
+const dotenv = require("dotenv");
+
+dotenv.config();
+
 
 const generateOrder = () => {
   const statuses = ["pending", "processing", "completed", "cancelled"];
@@ -23,7 +27,7 @@ const generateOrder = () => {
 };
 
 const seedData = async () => {
-  const uri = "mongodb://localhost:27017/ordersDB";
+  const uri = process.env.uri
 
   try {
     await mongoose.connect(uri);

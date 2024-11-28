@@ -1,5 +1,7 @@
-﻿# Backend for Orders Project
+### A full-stack project comprising a backend service for managing orders and a frontend application for displaying large datasets efficiently using a virtual scrolling table.
 
+---
+ ## Backend for the project
 This is the backend service for the Orders Project, responsible for handling data storage, APIs, and business logic.
 
 ## Features
@@ -31,7 +33,7 @@ This is the backend service for the Orders Project, responsible for handling dat
    npm run dev
    
 
-# Frontend for Orders Project
+# Frontend for the project
 
 ## Overview
 This project implements a **virtual scrolling table** with infinite scrolling using `react-query` and `react-intersection-observer`. The table efficiently handles large datasets by rendering only visible rows, ensuring smooth scrolling performance and minimal memory usage.
@@ -62,7 +64,10 @@ This project implements a **virtual scrolling table** with infinite scrolling us
 - **CSS**: Styling for responsive and user-friendly UI.
 
 ---
+## Project Images
+![Virtual Scrolling Table Screenshot](https://github.com/ikbal-hussain/jgs-tex-fab/blob/main/frontend/assets/Virtual%20Scrolling%20table%20screenshot.png?raw=true)
 
+---
 ## Folder Structure
 ```plaintext
 root/

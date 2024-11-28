@@ -41,6 +41,6 @@ const OrderSchema = new mongoose.Schema({
 
 OrderSchema.index({ status: 1, createdAt: -1 });
 
-const OrderModel = mongoose.model("Order", OrderSchema);
+const OrderModel = mongoose.model("order", OrderSchema);
 
 module.exports = OrderModel;
